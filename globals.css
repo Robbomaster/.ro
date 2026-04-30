@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #0E0F12;
+  background: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom underline yellow effect for headings */
+.underline-y {
+  background: linear-gradient(180deg, transparent 60%, #F5C518 60%);
+  padding: 0 4px;
+}
+
+/* Block button shadow effect */
+.btn-block {
+  box-shadow: 0 4px 0 #0E0F12;
+  transition: all 0.15s;
+}
+.btn-block:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #0E0F12;
+}
+.btn-block:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #0E0F12;
+}
+
+.btn-block-yellow {
+  box-shadow: 0 4px 0 #C49A0E;
+}
+.btn-block-yellow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #C49A0E;
+}
+.btn-block-yellow:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #C49A0E;
+}
